@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 
-export default function Child4({}) {
+export default function Child4({ apple }) {
   const [data, setData] = useState("");
   const myname = (e) => {
     setData(e.target.value);
+    apple(e.target.value);
     console.log(e.target.value);
   };
   console.log(data);
