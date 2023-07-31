@@ -5,9 +5,9 @@ export default function Child4({ apple }) {
   const myname = (e) => {
     setData(e.target.value);
     apple(e.target.value);
-    console.log(e.target.value);
+    // console.log(e.target.value);
   };
-  console.log(data);
+  // console.log(data);
 
   return (
     <>
